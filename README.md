@@ -7,6 +7,14 @@ bootcamp_2023
 
 A sample package for the MSF bootcamp.
 
+This repository is under development. To install, clone the repo and run the command
+
+```
+pip install -e .
+```
+
+in the repo directory.
+
 ### Copyright
 
 Copyright (c) 2023, Diego Kleiman

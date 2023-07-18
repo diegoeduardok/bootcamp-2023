@@ -5,7 +5,27 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
 
-def calculate_distance(rA, rB):
+def calculate_distance(rA: np.ndarray, rB: np.ndarray) -> float:
+    """
+    Calculate distance between two points.
+
+    Parameters
+    ----------
+    rA, rB: np.ndarray
+        The coordinates of each point.
+
+    Returns
+    -------
+    distance: float
+        The distance between the two points.
+
+    Examples
+    --------
+    >>> r1 = np.asarray([0, 0, 0])
+    >>> r2 = np.asarray([0, 1, 0])
+    >>> calculate_distance(r1, r2)
+    1
+    """
     # This function calculates the distance between two points given as numpy arrays.
     d = rA - rB
     dist = np.linalg.norm(d)
@@ -198,7 +218,7 @@ def canvas(with_attribution=True):
     return quote
 
 
-def hello_world(with_attribution=True):
+def hello_world(with_attribution: bool = True):
     """
     Hello world.
     """

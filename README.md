@@ -15,6 +15,8 @@ pip install -e .
 
 in the repo directory.
 
+This package requires `numpy` and `matplotlib`.
+
 ### Copyright
 
 Copyright (c) 2023, Diego Kleiman
